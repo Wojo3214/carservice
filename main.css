@@ -10,6 +10,8 @@ body{
     position: relative;
 }
 
+/***HEADER & NAVIGATION***/
+
 .header_container{
     background-image: url(bg.jpg);
     background-position: center;
@@ -97,6 +99,7 @@ nav > ul > li:hover a{
     right: 10px;
     width: 50px;
     height: 50px;
+    z-index: 98;
     background: rgb(11,128,189);
     background: linear-gradient(177deg, rgba(11,128,189,1) 0%, rgba(22,109,156,1) 100%);
     border-radius: 25px;
@@ -115,4 +118,50 @@ nav > ul > li:hover a{
     height: 2px;
     background-color: #F3F3F3;
     margin-top: 5px;
+}
+
+/***SERVICES***/
+.service_content{
+    display: flex;
+    min-width: 90%;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service_content i{
+    font-size: 60px;
+}
+
+.service_content h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.service_content p{
+    text-align: center;
+}
+
+.container_header{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.container_header h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.abc{
+    min-width: 90%;
+    text-align: center;
+    height: 300px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.abc h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
 }
