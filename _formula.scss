@@ -1,0 +1,42 @@
+.order_container{
+    width: 90%;
+    margin: 0 auto;
+    
+    .order_content{
+        .order_formula{
+            input{
+                width: 85%;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            
+            input[type="text"], input[type="mail"],input[type="phone"],input[type="submit"]{
+                background-color: #E6E6E6;
+                font-size: 17px;
+                padding: 15px 20px;
+            }
+            
+            input[type="checkbox"]{
+                width: auto;
+            }
+            
+            input[type="submit"]{
+                background-color: #0b80bd;
+                color: #fff;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 40px;
+            }
+            
+            input::placeholder{
+                color: #BFBFBF;
+            }
+            
+            .service_column{
+                displa: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+

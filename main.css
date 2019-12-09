@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    color:rgb(63, 63, 63);
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     position: relative;
 }
 
+
 h1{
     font-size: 55px;
     text-align: center;
@@ -34,6 +36,9 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.service_content i { 
+    color:rgb(43, 43, 43);
 }
 
 .order{
@@ -151,17 +156,76 @@ nav > ul > li:hover a{
 .container_header h2{
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
+    font-weight: 300;
+    color: rgb(11,128,189);
 }
 
-.abc{
+.lenght{
     min-width: 90%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     height: 300px;
-    background-color: antiquewhite;
-    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    justify-content: center;
+    
+
 }
 
-.abc h3{
+.lenght h3{
     font-family: 'Oswald', sans-serif;
-    font-size: 60px;
+    font-weight: 200;
+    padding-top: 20px;
+    font-size: 45px;
+    color: rgb(11,128,189);
+}
+.lenght p { 
+    font-size: 15px;
+    margin: 0 3% 0 3%;
+}
+
+.flexbox { 
+    display:flex;
+}
+
+.elo {
+    height: 300px;
+}
+
+.about { 
+    background-color: rgb(231,231,231);
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about h3 { 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    padding-top: 20px;
+
+    font-size: 45px;
+    color: rgb(11,128,189);
+    
+}
+
+.about p { 
+    font-size: 18px;
+    color: #3f3f3f;
+    margin:2%;
+    
+}
+
+.about p::first-letter { 
+    font-weight: bold;
+    font-size: 19px;
+}
+.about_image {
+    margin: 8%;
+    margin-bottom:0;
+    flex-basis: 100%;
+    height: 250px;
+    background-color: rgb(143, 143, 143);
 }

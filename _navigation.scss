@@ -1,0 +1,126 @@
+.header { 
+    &_container { 
+        background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    }
+    
+    &_content { 
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+}
+
+h1 {     font-size: 55px;
+    text-align: center;
+    line-height: 1.2;
+    color: #F3F3F3;
+    font-family: 'Oswald', sans-serif;}
+
+
+
+
+// NAVIGATION /// 
+
+.order{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #F3F3F3;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid #F3F3F3;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+
+nav { 
+    background-color: #171717;
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    ul { 
+        list-style-type: none;
+    font-size: 20px;
+    margin-top: 40px;
+    clear: both;
+        
+        li { 
+            width: 100%;
+            height: 40px;
+            padding: 5px 0;
+            text-align: center;
+            cursor: pointer;
+
+            a { 
+                color: #666666;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+        }
+        
+        li:hover a{
+            color: #f3f3f3;
+        }
+
+
+        }
+    }
+
+
+.close { 
+    &_btn { 
+        text-align: right;
+        margin: 5px 20px;
+        font-size: 40px;
+        color: #3f3f3f;
+        cursor: pointer;
+    }
+}
+
+.close{
+    &_btn:hover{
+        color: #F3F3F3;
+    }
+    
+}
+
+.burger { 
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 98;
+    background: rgb(11,128,189);
+    background: linear-gradient(177deg, rgba(11,128,189,1) 0%, rgba(22,109,156,1) 100%);
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.75);
+    &_lines { 
+        margin: 17px auto 0 auto;
+        width: 25px;
+
+        div{ 
+            width: 100%;
+            height: 2px;
+            background-color: #F3F3F3;
+            margin-top: 5px;
+        }
+    }
+}

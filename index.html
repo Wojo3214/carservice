@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <script src="https://kit.fontawesome.com/a29188a2f6.js"></script>
 
@@ -39,7 +41,7 @@
     <main>
         <section class="container">
             <header class="container_header">
-                <h2>Usługi</h2>
+                <h3>Usługi</h3>
             </header>
             <div class="service_content">
                 <i class="fas fa-tools"></i>
@@ -61,14 +63,88 @@
 
         </section>
         <section class="container">
-            <div class="abc">
+            <div class="lenght">
                 <h3>Działamy do 100 km</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium lorem ac accumsan ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </section>
-    </main>
-    <footer class="footer_container">
+        <section class="container">
+            <div class="customers">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
+        </section>
+        <section class="container about"> 
+                <div class="about_content">
+                    <h3>O nas</h3>
 
+                    <div class="about_image">
+                        <h1></h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla finibus rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sit amet justo et ipsum luctus porttitor. Nullam sit amet erat ac nunc interdum sagittis. Aenean vulputate nibh ex, quis scelerisque ante accumsan.</p>
+                </div>
+        </section>
+        <section class="container" id="oder">
+            <div class="order_container">
+                <div class="order_content">
+                    <h3>Zamów usługę</h3>
+
+                    <div class="order_formula">
+                        <form method="post">
+                            <input type="text" name="user_name" placeholder="Imię i nazwisko" required>
+                            <input type="phone" name="user_phone" placeholder="Telefon" required>
+                            <input type="mail" name="user_mail" placeholder="E-mail" required>
+                            <input type="text" name="user_localization" placeholder="Lokalizacja" required>
+                            <input type="text" name="user_car_brand" placeholder="Marka samochodu" required>
+                            <input type="text" name="user_car_id" placeholder="Nr rejestracyjny" required>
+                            <legend>Rodzaj usługi</legend>
+                            
+                            <div class="service_colimn">
+                                <div class="col">
+                                    <div><label><input type="checkbox" name="service" value="">A</label></div>
+                                    <div><label><input type="checkbox" name="service" value="">B</label></div>
+                                    <div><label><input type="checkbox" name="service" value="">C</label></div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Zamów">
+                            
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container container--footer">
+        <div class="find">
+        <h5>Znajdziesz nas</h5>
+        <p><i class="fas fa-map-marker-alt"></i> Wołow 49-333 Staszyca 28m</p>
+            <p><i class="fas fa-phone-alt"></i><a href="tel:+48533555555">+48 533-555-555</a></p>
+            <p><i class="fas fa-at"></i><a href="mailto:example@gmail.com">example@mail.com</a></p>
+        </div>
+
+        <div class="social">
+            <p>Facebook <i class="fab fa-facebook-f"></i> </p>
+            <p>Twitter <i class="fab fa-twitter"></i></p>
+            <p>Instagram <i class="fab fa-instagram"></i></p>
+        </div>
+        
+    </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.customers').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+    </script>
 </body>
 </html>

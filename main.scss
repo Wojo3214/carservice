@@ -1,0 +1,42 @@
+* { 
+    margin: 0;
+    padding:0;
+    border: 0;
+    color:rgb(63, 63, 63);
+}
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    position: relative;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+h1 { 
+    font-size: 55px;
+    text-align: center;
+    line-height: 1.2;
+    color: #F3F3F3;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 { 
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(11,128,189);
+    text-align: center;
+}
+
+.elo {
+    height: 300px;
+}
+
+@import 'mixin';
+@import 'navigation'; 
+@import 'services';
+@import 'customers';
+@import 'lenghtabout';
+@import 'formula';
+@import 'footer'
